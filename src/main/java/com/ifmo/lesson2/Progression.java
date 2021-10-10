@@ -7,6 +7,7 @@ public class Progression {
      */
     public static void main(String[] args) {
         // TODO implement
+
         for (int i=1000; i<=9999; i=i+3){
             System.out.println(i);
         }
