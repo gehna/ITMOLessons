@@ -18,12 +18,15 @@ public class LuckyTickets {
         // TODO implement
 
         int sum = 0;
+
         for (int i=1; i<=999999; i++){
+            String zeros = "";
             String num = String.valueOf(i);
 //            num = "0"*(6-num.length());
-            for (int j=0; j<=6-num.length()-1; i++){
-                num="0"+num;
+            for (int j=0; j<=6-num.length()-1; j++){
+                zeros+="0";
             }
+            num = zeros + num;
             int a1 = Integer.parseInt(String.valueOf(num.charAt(0)));
             int a2 = Integer.parseInt(String.valueOf(num.charAt(1)));
             int a3 = Integer.parseInt(String.valueOf(num.charAt(2)));
@@ -31,6 +34,7 @@ public class LuckyTickets {
             int a5 = Integer.parseInt(String.valueOf(num.charAt(4)));
             int a6 = Integer.parseInt(String.valueOf(num.charAt(5)));
             if (a1+a2+a3==a4+a5+a6){
+//                System.out.println(num);
                 sum+=1;
             }
         }
