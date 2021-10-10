@@ -11,7 +11,6 @@ public class Factorial {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
-
         long factorial = factorial(n);
 
         System.out.println(factorial);
