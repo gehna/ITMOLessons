@@ -23,6 +23,7 @@ public class SquareEquation {
      */
     public static double[] squareEquationRoots(double a, double b, double c) {
         // TODO implement
+
         double[] f = new double[2];
         double discremenant=b*b-4*a*c;
         if (discremenant<0){
