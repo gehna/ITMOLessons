@@ -28,6 +28,7 @@ public class IntsOrdering {
         System.out.println(ordering);
     }
 
+
     public static String ordering(int a, int b, int c) {
         // TODO implement
         ArrayList<Integer> testList = new ArrayList();
