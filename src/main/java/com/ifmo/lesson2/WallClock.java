@@ -40,6 +40,7 @@ public class WallClock {
 
     public static int randomSecond() {
         // TODO implement
+
         int randomNum = ThreadLocalRandom.current().nextInt(0, 28800 + 1);
         return randomNum;
     }
