@@ -15,7 +15,6 @@ public class BiggestInRandom {
         int rnd = threeDigitRandom();
 
         String largestDigit = largestDigit(rnd);
-
         System.out.println(largestDigit);
     }
 
