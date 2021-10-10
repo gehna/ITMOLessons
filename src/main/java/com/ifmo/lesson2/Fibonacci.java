@@ -6,6 +6,7 @@ public class Fibonacci {
      первый и второй члены последовательности равны единицам, а каждый следующий — сумме
      двух предыдущих.
      */
+
     public static void main(String[] args) {
         // TODO implement
         int[] arr = new int[12];
