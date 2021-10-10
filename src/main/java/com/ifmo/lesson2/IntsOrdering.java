@@ -1,7 +1,5 @@
 package com.ifmo.lesson2;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -30,7 +28,7 @@ public class IntsOrdering {
         System.out.println(ordering);
     }
 
-    public static @NotNull String ordering(int a, int b, int c) {
+    public static String ordering(int a, int b, int c) {
         // TODO implement
         ArrayList<Integer> testList = new ArrayList();
         testList.add(a);
