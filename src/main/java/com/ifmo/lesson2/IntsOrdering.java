@@ -31,7 +31,6 @@ public class IntsOrdering {
 
     public static String ordering(int a, int b, int c) {
         // TODO implement
-
         ArrayList<Integer> testList = new ArrayList();
         testList.add(a);
         testList.add(b);
