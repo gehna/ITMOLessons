@@ -52,6 +52,8 @@ public class WallClock {
             return "Осталось менее часа";
         } else if (rndSecond>=3600 && rndSecond<7200){
             return "Остался 1 час";
+        } else if (rndSecond>=18000){
+            return "Осталось "+rndSecond/3600+" часов";
         }
 
         return "Осталось "+rndSecond/3600+" часа";
