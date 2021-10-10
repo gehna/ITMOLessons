@@ -16,6 +16,7 @@ public class LuckyTickets {
 
     public static int luckyTickets() {
         // TODO implement
+
         int sum = 0;
         for (int i=1; i<=999999; i++){
             String num = String.valueOf(i);
