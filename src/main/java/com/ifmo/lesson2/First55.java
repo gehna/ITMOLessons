@@ -6,6 +6,7 @@ public class First55 {
      */
     public static void main(String[] args) {
         // TODO implement
+
         int i=0;
         int res=-1;
 
