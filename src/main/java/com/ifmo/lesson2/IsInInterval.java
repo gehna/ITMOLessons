@@ -21,6 +21,7 @@ public class IsInInterval {
 
     public static int randomInt() {
         // TODO implement
+
         // nextInt is normally exclusive of the top value,
         // so add 1 to make it inclusive
         int randomNum = ThreadLocalRandom.current().nextInt(5, 155 + 1);
