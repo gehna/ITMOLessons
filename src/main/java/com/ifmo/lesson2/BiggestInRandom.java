@@ -10,6 +10,7 @@ public class BiggestInRandom {
      В числе 774 наибольшая цифра 7.
      В числе 613 наибольшая цифра 6.
      */
+
     public static void main(String[] args) {
         int rnd = threeDigitRandom();
 
