@@ -18,7 +18,8 @@ public class Count2 {
         // TODO implement
         int sum = 0;
         for (int i=1; i<=50000; i++) {
-            if (i % 10 == 2 || i / 10 == 2 || i / 100 == 2 || i / 1000 == 2 || i / 10000 == 2) {
+            if (i % 10 == 2 || i / 10 % 10 == 2 || i / 100 % 10== 2 || i / 1000 % 10== 2 || i / 10000 % 10 == 2) {
+//                System.out.println(i);
                 sum++;
             }
         }
