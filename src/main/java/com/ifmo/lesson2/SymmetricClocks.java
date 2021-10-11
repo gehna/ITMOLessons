@@ -13,10 +13,10 @@ public class SymmetricClocks {
     public static int symmetricTimes() {
         // TODO implement
         int sum = 0;
-        for (int i = 0; i <=23 ; i++) {
+        for (int i = 1; i <=23 ; i++) {
             int a = i/10;
             int b = i%10;
-            for (int j = 0; j <= 60; j++) {
+            for (int j = 1; j <= 60; j++) {
                 int a1 = j/10;
                 int b1 = j%10;
                 if (a==b1 && b==a1){
