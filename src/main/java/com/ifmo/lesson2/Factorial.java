@@ -18,9 +18,10 @@ public class Factorial {
 
     public static long factorial(int n) {
         // TODO implement
-        int result = 1;
+        long result = 1;
         for (int i = 1; i <= n; i++) {
             result = result * i;
+//            System.out.println(6227020800/1932053504);
         }
         return result;
     }
