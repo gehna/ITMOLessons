@@ -15,20 +15,17 @@ public class UnluckyNumbers {
 
     public static int unluckyNumbersCount() {
         // TODO implement
-        int sum4 = 0;
-        int sum13 = 0;
+        int sum = 0;
+
         for (int i=1; i<=100000; i++) {
             if (i % 10 == 4 || i / 10 % 10 == 4 || i / 100 % 10== 4 ||
-                    i / 1000 % 10== 4 || i / 10000 % 10 == 4) {
-
-                sum4++;
-            }
-            if (i%100 == 13 ||i%1000/10 == 13 || i%10000/100==13 || i/1000==13){
+                    i / 1000 % 10== 4 || i / 10000 == 4 || i%100 == 13 ||i%1000/10 == 13 || i%10000/100==13 || i/1000==13) {
 //                System.out.println(i);
-                sum13++;
+                sum++;
             }
+
         }
 
-        return sum4+sum13;
+        return sum;
     }
 }
