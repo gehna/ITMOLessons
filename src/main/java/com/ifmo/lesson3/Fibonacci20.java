@@ -19,7 +19,7 @@ public class Fibonacci20 {
     public static int[] fibonacciNumbers() {
         // TODO implement
         int[] arr = new int[20];
-        arr[0] = 0;
+        arr[0] = 1;
         arr[1] = 1;
 //        System.out.println(arr[1]);
         for (int i = 2; i < arr.length; ++i) {
