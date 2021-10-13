@@ -24,9 +24,9 @@ public class EvenArray {
 
     public static int[] evenArray() {
         // TODO implement
-        int[] myArray = new int[11];
-        for (int i = 0; i < myArray.length; i++) {
-            myArray[i] = i*2;
+        int[] myArray = new int[10];
+        for (int i = 1; i <= myArray.length; i++) {
+            myArray[i-1] = i*2;
         }
 
         return myArray;
