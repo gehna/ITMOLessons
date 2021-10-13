@@ -12,7 +12,7 @@ public class Random4 {
         int[] randomNumbers = randomNumbers();
 
         for (int i = 0; i < randomNumbers.length; i++) {
-            System.out.print(randomNumbers[i]+" ");
+            System.out.print(randomNumbers[i]);
         }
         // TODO implement
         System.out.println();
