@@ -14,11 +14,11 @@ public class UnevenArray {
         // TODO implement
 
         for (int i = 0; i < unevenArray.length; i++) {
-            System.out.print(unevenArray[i]);
+            System.out.print(unevenArray[i]+" ");
         }
         System.out.println();
         for (int i = unevenArray.length-1; i >= 0; i--) {
-            System.out.print(unevenArray[i]);
+            System.out.print(unevenArray[i]+" ");
         }
     }
 
