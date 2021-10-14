@@ -72,9 +72,15 @@ public class LinkedList {
         if (head==null){
             return null;
         }
+
         int counter = 0;
         Item current = head;
         Item prev = head;
+
+        if (i==0){
+            head=current.next;
+            return head;
+        }
 
         while (true){
             if (counter==i){
