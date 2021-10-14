@@ -21,7 +21,7 @@ public class Main {
         //row 3
 
         System.out.println("1 item removed");
-        Object removed = list.remove(0);
+        Object removed = list.remove(3);
         System.out.println("removed: "+ removed); //row 2
         printList(list, 3);
         //row 1

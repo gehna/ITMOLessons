@@ -79,13 +79,13 @@ public class LinkedList {
 
         if (i==0){
             head=current.next;
-            return head;
+            return prev.value;
         }
 
         while (true){
             if (counter==i){
                 prev.next = current.next;
-                return current;
+                return current.value;
             }
             if (counter<i && current.next==null){
                 return null;
