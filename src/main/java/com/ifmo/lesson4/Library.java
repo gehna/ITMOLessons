@@ -109,23 +109,23 @@ public class Library {
         return ret1;
     }
 
-    public static void main(String[] args) {
-        Library myLibrary = new Library(3);
-        Book myBook1 = new Book("a1", "t1");
-        Book myBook2 = new Book("a2", "t2");
-        Book myBook3 = new Book("a3", "t3");
-        Book myBook4 = new Book("a4", "t4");
-
-        System.out.println(myLibrary.put(myBook1,1));
-        System.out.println(myLibrary.put(myBook2,2));
-        System.out.println(myLibrary.put(myBook3,3));
-        System.out.println(myLibrary.put(myBook4,4));
-        System.out.println(booksInShelf[0]);
-        System.out.println(booksInShelf[1]);
-        System.out.println(booksInShelf[2]);
-
-        System.out.println(myLibrary.take(myBook3,10));
-        System.out.println(booksInShelf[2]);
-
-    }
+//    public static void main(String[] args) {
+//        Library myLibrary = new Library(3);
+//        Book myBook1 = new Book("a1", "t1");
+////        Book myBook2 = new Book("a2", "t2");
+////        Book myBook3 = new Book("a3", "t3");
+////        Book myBook4 = new Book("a4", "t4");
+//
+//        System.out.println(myLibrary.put(myBook1,1));
+////        System.out.println(myLibrary.put(myBook2,2));
+////        System.out.println(myLibrary.put(myBook3,3));
+////        System.out.println(myLibrary.put(myBook4,4));
+//        System.out.println(booksInShelf[0]);
+//        System.out.println(booksInShelf[1]);
+//        System.out.println(booksInShelf[2]);
+//
+//        System.out.println(myLibrary.take(myBook1,1));
+//        System.out.println(booksInShelf[0]);
+//
+//    }
 }
