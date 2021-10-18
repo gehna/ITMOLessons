@@ -70,7 +70,7 @@ public class Library {
                 Library.myLibrary[i].title = book.title;
                 booksInShelf[i] += quantity;
                 return true;
-            } else if (Library.myLibrary[i].author == book.author && Library.myLibrary[i].title == book.title ){
+            } else if (Library.myLibrary[i].author.equals(book.author) && Library.myLibrary[i].title.equals(book.title) ){
                 booksInShelf[i] += quantity;
                 return true;
             }
@@ -91,8 +91,8 @@ public class Library {
         int ret1 = 0;
         int tempVar = 0;
         for (int i = 0; i < myLibrary.length; i++) {
-            if (Library.myLibrary[i].author == book.author &&
-                    Library.myLibrary[i].title == book.title){
+            if (Library.myLibrary[i].author.equals(book.author) &&
+                    Library.myLibrary[i].title.equals(book.title)){
                 ret1 = booksInShelf[i] - quantity;
                 tempVar = booksInShelf[i];
                 if (ret1<=0){
@@ -109,23 +109,23 @@ public class Library {
         return ret1;
     }
 
-//    public static void main(String[] args) {
-//        Library myLibrary = new Library(3);
-//        Book myBook1 = new Book("a1", "t1");
-////        Book myBook2 = new Book("a2", "t2");
-////        Book myBook3 = new Book("a3", "t3");
-////        Book myBook4 = new Book("a4", "t4");
-//
-//        System.out.println(myLibrary.put(myBook1,1));
-////        System.out.println(myLibrary.put(myBook2,2));
-////        System.out.println(myLibrary.put(myBook3,3));
-////        System.out.println(myLibrary.put(myBook4,4));
-//        System.out.println(booksInShelf[0]);
-//        System.out.println(booksInShelf[1]);
-//        System.out.println(booksInShelf[2]);
-//
-//        System.out.println(myLibrary.take(myBook1,1));
-//        System.out.println(booksInShelf[0]);
-//
-//    }
+    public static void main(String[] args) {
+        Library myLibrary = new Library(3);
+        Book myBook1 = new Book("a1", "t1");
+//        Book myBook2 = new Book("a2", "t2");
+//        Book myBook3 = new Book("a3", "t3");
+//        Book myBook4 = new Book("a4", "t4");
+
+        System.out.println(myLibrary.put(myBook1,1));
+//        System.out.println(myLibrary.put(myBook2,2));
+//        System.out.println(myLibrary.put(myBook3,3));
+//        System.out.println(myLibrary.put(myBook4,4));
+        System.out.println(booksInShelf[0]);
+        System.out.println(booksInShelf[1]);
+        System.out.println(booksInShelf[2]);
+
+        System.out.println(myLibrary.take(myBook1,1));
+        System.out.println(booksInShelf[0]);
+
+    }
 }
