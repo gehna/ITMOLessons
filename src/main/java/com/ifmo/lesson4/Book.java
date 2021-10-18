@@ -3,7 +3,6 @@ package com.ifmo.lesson4;
 public class Book {
     String author;
     String title;
-    public Book next;
 
     public Book(String author, String title) {
         this.author = author;

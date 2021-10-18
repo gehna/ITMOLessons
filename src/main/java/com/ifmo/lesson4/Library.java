@@ -124,7 +124,7 @@ public class Library {
         System.out.println(booksInShelf[1]);
         System.out.println(booksInShelf[2]);
 
-        System.out.println(myLibrary.take(myBook3,1));
+        System.out.println(myLibrary.take(myBook3,10));
         System.out.println(booksInShelf[2]);
 
     }
