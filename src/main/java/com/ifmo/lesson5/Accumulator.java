@@ -11,6 +11,7 @@ public class Accumulator {
         for (int i = 0; i < values.length; i++) {
             System.out.println(values[i]);
         }
+
         return values;
     }
 
