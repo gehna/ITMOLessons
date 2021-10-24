@@ -121,6 +121,9 @@ public class ArrayList implements List {
                 if (values==null){
                     return false;
                 }
+                if (size<=index){
+                    return false;
+                }
                 return values[index] != null;
             }
 
