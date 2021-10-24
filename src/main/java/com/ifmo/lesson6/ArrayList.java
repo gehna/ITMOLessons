@@ -79,9 +79,14 @@ public class ArrayList implements List {
          * @param i Индекс, по которому будет удален элемент.
          * @return Удаленное значение или {@code null}, если не найдено.
          */
+        if (i>=values.length){
+            return null;
+        }
+
         if (values[i]==null){
             return null;
         }
+
         Object val = values[i];
         if (i==values.length-1){
             values[i]=null;
