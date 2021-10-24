@@ -93,6 +93,7 @@ public class ArrayList implements List {
         Object val = values[i];
         if (i==values.length-1){
             values[i]=null;
+            size--;
             return val;
         }
         Object[] tempArray = new Object[values.length];
@@ -102,7 +103,7 @@ public class ArrayList implements List {
         System.arraycopy(values, i+1, tempArray, i, values.length-i-1);
         System.out.println(Arrays.toString(tempArray));
         values = tempArray;
-
+        size--;
 
         return val;
     }
