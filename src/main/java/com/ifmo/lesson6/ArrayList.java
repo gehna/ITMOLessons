@@ -118,14 +118,14 @@ public class ArrayList implements List {
 
 
             public boolean hasNext() {
-                return values[index] != null;
+                return values[index+1] != null;
             }
 
 
             public String next() {
                 if (hasNext()) {
-                    String data = (String) values[index];
                     index++;
+                    String data = (String) values[index];
                     return data;
                 }
                 return null;
