@@ -145,7 +145,7 @@ public class LinkedList implements List, Stack, Queue {
         }
         Item item = head;
         head = head.next;
-        return item;
+        return item.value;
     }
 
 
