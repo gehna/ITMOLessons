@@ -118,17 +118,17 @@ public class ArrayList implements List {
 
 
             public boolean hasNext() {
-                if (values[0]==null){
+                if (values==null){
                     return false;
                 }
-                return values[index+1] != null;
+                return values[index] != null;
             }
 
 
             public String next() {
                 if (hasNext()) {
-                    index++;
                     String data = (String) values[index];
+                    index++;
                     return data;
                 }
                 return null;
