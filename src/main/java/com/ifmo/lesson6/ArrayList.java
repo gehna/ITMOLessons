@@ -118,6 +118,9 @@ public class ArrayList implements List {
 
 
             public boolean hasNext() {
+                if (values[0]==null){
+                    return false;
+                }
                 return values[index+1] != null;
             }
 
