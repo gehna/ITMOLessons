@@ -44,7 +44,7 @@ public class LinkedList implements List, Stack, Queue {
         Item item = head;
         item = head;
         head = head.next;
-        return item;
+        return item.value;
     }
 
     /** {@inheritDoc} */
