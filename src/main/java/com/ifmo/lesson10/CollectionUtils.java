@@ -13,7 +13,6 @@ public class CollectionUtils {
             return List.of();
         }
         return new Iterable<T>() {
-            @NotNull
             @Override
             public Iterator<T> iterator() {
                 return new Iterator<T>() {
