@@ -1,7 +1,5 @@
 package com.ifmo.lesson10;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
