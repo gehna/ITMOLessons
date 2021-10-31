@@ -97,9 +97,7 @@ public class Tasks1 {
         // [{URGENT, 4}, {HIGH, 9}, {LOW, 3}].
         // Т.е. остались только уникальные значения, и порядок их поступления сохранен.
         List<Message> result = new ArrayList<>();
-//        for (MessagePriority word: MessagePriority.values()){
-//            result.add(new Message(word, 0));
-//        }
+
         result.add(new Message(messages.get(0).getPriority(), messages.get(0).getCode()));
         for (int i = 1; i < messages.size(); i++) {
             int j = 0;
