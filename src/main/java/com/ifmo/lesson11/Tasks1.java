@@ -21,6 +21,7 @@ public class Tasks1 {
         countUniqueMessages(messages);
 
         System.out.println("Genuine messages in natural order: \n" + genuineMessagesInOriginalOrder(messages));
+        System.out.println("messages: \n" + messages);
 
         removeEach(generator.generate(100), MessagePriority.LOW);
         removeOther(generator.generate(100), MessagePriority.URGENT);
@@ -102,13 +103,20 @@ public class Tasks1 {
         result.add(new Message(messages.get(0).getPriority(), messages.get(0).getCode()));
         for (int i = 1; i < messages.size(); i++) {
             int j = 0;
+            boolean find = false;
             while (true) {
-                if (j<result.size() && result.get(j).equals(messages.get(i))) {
-                    j++;
-                    continue;
+                if (j>=result.size()) {
+                    break;
                 }
+
+                if (result.get(j).equals(messages.get(i))) {
+                    find = true;
+                    break;
+                }
+                j++;
+            }
+            if (!find) {
                 result.add(new Message(messages.get(i).getPriority(), messages.get(i).getCode()));
-                break;
             }
         }
 //            for (int j = 0; j < result.size(); j++) {
@@ -119,8 +127,6 @@ public class Tasks1 {
 //
 //            }
 
-
-        System.out.println("genuineMessagesInOriginalOrder result");
 
         // TODO implement
 
