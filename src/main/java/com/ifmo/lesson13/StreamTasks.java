@@ -4,13 +4,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-
 public class StreamTasks {
-    private static final List<String> COUNTRIES = Arrays.asList("Germany", "Russia", "Mexico", "Ghana", "Japan");
-    private static final List<String> NAMES = Arrays.asList("Bob", "Alice", "Nick", "Ted", "Quentin", "David", "Zack", "Stacy", "Helen", "Julia");
+    private static final List<String> COUNTRIES = Arrays.asList("Netherlands", "USA", "Russia", "Africa", "China", "Australia");
+    private static final List<String> NAMES = Arrays.asList("Gena", "Alena", "Petr", "Sveta", "Evgenii", "Alla", "Gleb");
 
     public static Person randomPerson() {
-        return new Person(NAMES.get((int) (Math.random() * 9)), (int) (Math.random() * 99), COUNTRIES.get((int) (Math.random() * 4)));
+        return new Person(NAMES.get((int) (Math.random() * 7)), (int) (Math.random() * 99), COUNTRIES.get((int) (Math.random() * 6)));
     }
 
     static class Person {
@@ -104,7 +103,7 @@ public class StreamTasks {
     // number - число желаемых людей.
     public static Stream<Person> generatePeople(int number) {
         // TODO implement.
-        return Stream.generate(StreamTasks                                                              ::randomPerson).limit(number);
+        return Stream.generate(StreamTasks::randomPerson).limit(number);
     }
 
     // Метод возвращает карту сгруппированных слов по их длине. Например, для
