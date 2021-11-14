@@ -6,11 +6,11 @@ import java.util.stream.Stream;
 
 
 public class StreamTasks {
-    private static final List<String> COUNTRIES = Arrays.asList("Netherlands", "USA", "Russia", "Africa", "China", "Australia", "Belgium", "Egypt", "Turkey", "Italy", "Germany");
+    private static final List<String> COUNTRIES = Arrays.asList("Netherlands", "USA", "Russia");
     private static final List<String> NAMES = Arrays.asList("Gena", "Alena", "Petr", "Sveta", "Evgenii", "Alla", "Gleb");
 
     public static Person randomPerson() {
-        return new Person(NAMES.get((int) (Math.random() * 7)), (int) (Math.random() * 99), COUNTRIES.get((int) (Math.random() * 11)));
+        return new Person(NAMES.get((int) (Math.random() * 7)), (int) (Math.random() * 99), COUNTRIES.get((int) (Math.random() * 3)));
     }
 
     static class Person {
