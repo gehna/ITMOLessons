@@ -1,5 +1,6 @@
 package com.ifmo.lesson13;
 
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -46,14 +47,7 @@ public class StreamTasks {
         System.out.println(longestWords);
     }
 
-//    // Метод возвращает страны в порядке убывания их населения.
-//    public static List<String> countriesSortedByTheirPopulationDescending(Stream<Person> people) {
-//        // TODO implement.
-//        List<Person> collect = people.collect(Collectors.toList());
-//        Map<String, Integer> stringIntegerMap = generateCountryCount(collect);
-//        return List.copyOf(collect.stream().sorted(((o1, o2) -> comparingByCountrySize(stringIntegerMap, o1, o2))).map(o -> o.country).collect(Collectors.toSet()));
-//    }
-// Метод возвращает страны в порядке убывания их населения.
+    // Метод возвращает страны в порядке убывания их населения.
     public static List<String> countriesSortedByTheirPopulationDescending(Stream<Person> people) {
         // TODO implement.
         List<Person> collect = people.collect(Collectors.toList());
