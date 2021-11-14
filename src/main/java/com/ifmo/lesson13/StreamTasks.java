@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
 public class StreamTasks {
     private static final List<String> COUNTRIES = Arrays.asList("Germany", "Russia", "Mexico", "Ghana", "Japan");
     private static final List<String> NAMES = Arrays.asList("Bob", "Alice", "Nick", "Ted", "Quentin", "David", "Zack", "Stacy", "Helen", "Julia");
