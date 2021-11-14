@@ -5,11 +5,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamTasks {
-    private static final List<String> COUNTRIES = Arrays.asList("Netherlands", "USA", "Russia", "Africa", "China", "Australia");
+    private static final List<String> COUNTRIES = Arrays.asList("Netherlands", "USA", "Russia", "Africa", "China", "Australia", "Belgium", "Egypt", "Turkey", "Italy", "Germany");
     private static final List<String> NAMES = Arrays.asList("Gena", "Alena", "Petr", "Sveta", "Evgenii", "Alla", "Gleb");
 
     public static Person randomPerson() {
-        return new Person(NAMES.get((int) (Math.random() * 7)), (int) (Math.random() * 99), COUNTRIES.get((int) (Math.random() * 6)));
+        return new Person(NAMES.get((int) (Math.random() * 7)), (int) (Math.random() * 99), COUNTRIES.get((int) (Math.random() * 11)));
     }
 
     static class Person {
@@ -46,12 +46,23 @@ public class StreamTasks {
         System.out.println(longestWords);
     }
 
-    // Метод возвращает страны в порядке убывания их населения.
+//    // Метод возвращает страны в порядке убывания их населения.
+//    public static List<String> countriesSortedByTheirPopulationDescending(Stream<Person> people) {
+//        // TODO implement.
+//        List<Person> collect = people.collect(Collectors.toList());
+//        Map<String, Integer> stringIntegerMap = generateCountryCount(collect);
+//        return List.copyOf(collect.stream().sorted(((o1, o2) -> comparingByCountrySize(stringIntegerMap, o1, o2))).map(o -> o.country).collect(Collectors.toSet()));
+//    }
+// Метод возвращает страны в порядке убывания их населения.
     public static List<String> countriesSortedByTheirPopulationDescending(Stream<Person> people) {
         // TODO implement.
         List<Person> collect = people.collect(Collectors.toList());
         Map<String, Integer> stringIntegerMap = generateCountryCount(collect);
-        return List.copyOf(collect.stream().sorted(((o1, o2) -> comparingByCountrySize(stringIntegerMap, o1, o2))).map(o -> o.country).collect(Collectors.toSet()));
+        return collect.stream()
+                .sorted(((o1, o2) -> stringIntegerMap.get(o2.country).compareTo(stringIntegerMap.get(o1.country))))
+                .map(a -> a.country)
+                .distinct()
+                .collect(Collectors.toList());
     }
 
     private static int comparingByCountrySize(Map<String, Integer> stringIntegerMap, Person o1, Person o2) {
