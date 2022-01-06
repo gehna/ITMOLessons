@@ -1,6 +1,6 @@
 public class Account {
     private long id;
-    private volatile double amount;
+    private volatile double amount = 0.0;
     private long userId;
     private boolean blocked;
 
